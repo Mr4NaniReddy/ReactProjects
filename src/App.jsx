@@ -1,21 +1,15 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import MemberCard from './components/TeamMemberCard'
-import { team } from './Data/data'
+import MyChannelVideos from './components/Videos'
+import UseStates from './components/UseStates'
+
 
 function App() {
 
   return (
     <>
-      <h1>Team details</h1>
-      {
-        team.map(member=>{
-          return <MemberCard name={member.name} key={member.id} image={member.image} />
-        })
-
-      }
+      <MyChannelVideos />
+      <UseStates messeage={"Hi what are you doing"}/>
     </>
   )
 }
