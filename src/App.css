@@ -1,42 +1,54 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-/* okay */
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.mainbody
+{
+  background: #2980b9;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2c3e50, #2980b9);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2c3e50, #2980b9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-list-maindiv
+{
+  background-color: white;
+  width: 500px;
+  height: 750px;
+  border-radius: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.todo-task-input-div
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  padding: 10px;
+
 }
 
-.card {
-  padding: 2em;
+#add-button
+{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+.tasks-list
+{
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  
 }
 
-.read-the-docs {
-  color: #888;
+.tasks-list li
+{
+  margin: 0px;
+}
+.task
+{
+
+}
+
+.task-buttons
+{
+  display: flex;
+  column-gap: 10px;
 }
